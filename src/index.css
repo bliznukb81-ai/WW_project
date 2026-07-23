@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@keyframes pulseCross {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+.animate-cross-pulse {
+  animation: pulseCross 2s ease-in-out infinite;
+}
+
+@keyframes customPulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .4;
+  }
+}
+
+.custom-pulse {
+  animation: customPulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
